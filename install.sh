@@ -8,4 +8,6 @@ ln -sf $dir/dunst/dunstrc ~/.config/dunst/dunstrc
 ln -sf $dir/qutebrowser/config.py ~/.config/qutebrowser/config.py
 ln -sf $dir/rofi/config ~/.config/rofi/config
 ln -sf $dir/termite/config ~/.config/termite/config
+ln -sf $dir/vim/$1.vim ~/.vim/colors/$1.vim
+ln -sf $dir/vim/vimrc ~/.vimrc
 ln -sf $dir/background.jpg ~/background.jpg

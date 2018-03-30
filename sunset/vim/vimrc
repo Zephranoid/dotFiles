@@ -1,0 +1,41 @@
+set nocompatible
+filetype off
+
+filetype plugin indent on
+syntax on
+colorscheme sunset
+
+"Search Settings
+set ignorecase
+
+"Indentation options
+set autoindent
+set smartindent
+set shiftwidth=4
+set tabstop=4
+set noexpandtab
+
+"No Backup
+set nobackup
+set nowritebackup
+set noswapfile
+
+"Line numbers
+set number
+set relativenumber
+
+"Line wrapping
+set wrap
+
+"Fix indentation of file
+function IndentFile()
+	:normal ma
+	:normal gg=G
+	:normal `a
+endfunction
+nnoremap <F12> :call IndentFile()<cr>
+
+"Show syntax group
+noremap <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR> 
