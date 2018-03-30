@@ -1649,4 +1649,4 @@ c.url.searchengines = {"DEFAULT": "https://duckduckgo.com/?q={}",
 # config.bind('y', 'prompt-accept yes', mode='yesno')
 
 #Custom bindings
-config.bind('M', 'hint links spawn mpv {hint-url}')
+config.bind('M', 'hint links spawn nohup mpv {hint-url}')
