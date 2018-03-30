@@ -3,7 +3,7 @@ filetype off
 
 filetype plugin indent on
 syntax on
-colorscheme sunset
+colorscheme theme
 
 "Search Settings
 set ignorecase
