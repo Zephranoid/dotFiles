@@ -1,0 +1,83 @@
+[options]
+#allow_bold = true
+#audible_bell = false
+#clickable_url = true
+#dynamic_title = true
+font = Ionicons 12
+font = Misc Tamsyn 12
+#fullscreen = true
+#geometry = 640x480
+#icon_name = terminal
+mouse_autohide = false
+#scroll_on_output = false
+#scroll_on_keystroke = true
+# Length of the scrollback buffer, 0 disabled the scrollback buffer
+# and setting it to a negative value means "infinite scrollback"
+scrollback_lines = 0
+search_wrap = true
+#urgent_on_bell = true
+#hyperlinks = false
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+#browser = xdg-open
+
+# "system", "on" or "off"
+#cursor_blink = system
+
+# "block", "underline" or "ibeam"
+#cursor_shape = block
+
+# Hide links that are no longer valid in url select overlay mode
+#filter_unmatched_urls = true
+
+# Emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+# set size hints for the window
+#size_hints = false
+
+# "off", "left" or "right"
+scrollbar = off
+
+[colors]
+# If both of these are unset, cursor falls back to the foreground color,
+# and cursor_foreground falls back to the background color.
+#cursor = #dcdccc
+#cursor_foreground = #dcdccc
+
+foreground = #33AAEE
+#foreground_bold = #ffffff
+#background = #661122
+
+# 15% background transparency (requires a compositor)
+background = rgba(0, 34, 51, 0.85)
+
+# If unset, will reverse foreground and background
+highlight = #2f2f2f
+
+# Colors from color0 to color254 can be set
+color0 = #004477
+color8 = #004477
+
+color1 = #1177BB
+color9 = #1177BB
+
+color2 = #336688
+color10 = #336688
+
+color3 = #5599BB
+color11 = #5599BB
+
+color4 = #77CCEE
+color12 = #77CCEE
+
+color5 = #DDFFFF
+color13 = #DDFFFF
+
+color6 = #224444
+color14 = #224444
+
+color7 = #AACCCC
+color15 = #AACCCC
+
+[hints]
