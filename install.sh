@@ -13,3 +13,4 @@ ln -sf $dir/vim/theme.vim ~/.vim/colors/theme.vim
 ln -sf $constants/vimrc ~/.vimrc
 ln -sf $constants/bashrc ~/.bashrc
 ln -sf $dir/background.jpg ~/background.jpg
+ln -sf $dir/rofi/custom.rasi ~/.config/rofi/custom.rasi
