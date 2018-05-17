@@ -140,6 +140,7 @@ exec xbindkeys -p
 exec setxkbmap -option caps:escape
 exec udiskie
 exec unclutter -root -visible
+exec mpd
 
 #Program shortcuts
 bindsym $mod+r exec termite -e ranger
