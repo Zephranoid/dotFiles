@@ -24,10 +24,10 @@ configuration {
  * Copyright: Travis Wesley
  */
 * {
-    foreground:  #33AAEE;
-    background:   #002233D9;
+    foreground:  #839496;
+    background:   #00002b36;
     background-color:  transparent;
-    select:	#004477;
+    select-bg:	#002b36;
 
     transparent: rgba(0,0,0,0);
     font: "Tamsyn 9";
@@ -98,7 +98,9 @@ configuration {
     font:inherit;
 }
 #element selected.normal {
-    background-color: @select;
+    background-color: @select-bg;
+	border: 1px;
+	border-color: @foreground;
 }
 #element normal active {
     foreground: @lightblue;
@@ -115,8 +117,9 @@ configuration {
     foreground: @lightred;
 }
 #element selected active {
-    background-color: @select;
-    foreground: @dark;
+    background-color: @select-bg;
+	border: 1px;
+	border-color: @foreground;
 }
 #element selected urgent {
     background-color: @backselect;

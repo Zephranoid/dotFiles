@@ -45,39 +45,38 @@ scrollbar = off
 #cursor = #dcdccc
 #cursor_foreground = #dcdccc
 
-foreground = #33AAEE
+foreground = #839496
 #foreground_bold = #ffffff
 #background = #661122
 
 # 15% background transparency (requires a compositor)
-background = rgba(0, 34, 51, 0.85)
+background = rgba(0, 43, 54, 0.85)
 
 # If unset, will reverse foreground and background
-highlight = #2f2f2f
-
+#highlight = #2f2f2f 
 # Colors from color0 to color254 can be set
-color0 = #004477
-color8 = #004477
+color0 = #073642
+color8 = #002b36
 
-color1 = #1177BB
-color9 = #1177BB
+color1 = #DC322f
+color9 = #cb4b16
 
-color2 = #336688
-color10 = #336688
+color2 = #859900
+color10 = #586e75
 
-color3 = #5599BB
-color11 = #5599BB
+color3 = #b58900
+color11 = #657b83
 
-color4 = #77CCEE
-color12 = #77CCEE
+color4 = #268bd2
+color12 = #839496
 
-color5 = #DDFFFF
-color13 = #DDFFFF
+color5 = #d33682
+color13 = #6c71c4
 
-color6 = #224444
-color14 = #224444
+color6 = #2aa198
+color14 = #93a1a1
 
-color7 = #AACCCC
-color15 = #AACCCC
+color7 = #eee8d5
+color15 = #fdf6e3
 
 [hints]
