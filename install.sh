@@ -9,6 +9,7 @@ ln -sf $dir/rofi/config ~/.config/rofi/config
 ln -sf $dir/termite/config ~/.config/termite/config
 ln -sf $dir/vim/theme.vim ~/.vim/colors/theme.vim
 ln -sf $dir/vimrc ~/.vimrc
-ln -sf $dir/bashrc ~/.bashrc
+#ln -sf $dir/bashrc ~/.bashrc
 ln -sf $dir/background.jpg ~/background.jpg
 ln -sf $dir/rofi/custom.rasi ~/.config/rofi/custom.rasi
+ln -sf $dir/zsh/zshrc ~/.zshrc

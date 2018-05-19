@@ -1,0 +1,38 @@
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _complete _ignored
+zstyle ':completion:*' expand prefix suffix
+zstyle ':completion:*' file-sort name
+zstyle ':completion:*' insert-unambiguous true
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' list-suffixes true
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' preserve-prefix '//[^/]##/'
+zstyle ':completion:*' use-compctl false
+zstyle :compinstall filename '/home/travis/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+#PATH variable
+PATH="~/scripts:${PATH}"
+export PATH
+
+alias ls='ls --color=auto'
+alias dwarffortress='~/.dwarffortress/dfhack'
+alias installed='comm -23 <(pacman -Qqt | sort) <(pacman -Sqg base base-devel | sort)'
+
+##Set Prompt
+setopt PROMPT_SUBST
+#Load colors
+autoload -U colors && colors
+#Git stuff
+autoload -Uz vcs_info 
+precmd() { vcs_info }
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' unstagedstr "!" 
+zstyle ':vcs_info:*' stagedstr "+" 
+zstyle ':vcs_info:*' formats '[%b %m%u%c ]'
+
+PROMPT='%{%K{0}%}${PWD/#$HOME/~}/ ${vcs_info_msg_0_} %{$reset_color%}' 
