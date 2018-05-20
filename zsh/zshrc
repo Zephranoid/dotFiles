@@ -21,7 +21,7 @@ export PATH
 
 alias ls='ls --color=auto'
 alias dwarffortress='~/.dwarffortress/dfhack'
-alias installed='comm -23 <(pacman -Qqt | sort) <(pacman -Sqg base base-devel | sort)'
+alias installed='comm -23 <(pacman -Qeq | sort) <(pacman -Qgq base base-devel | sort)'
 
 ##Set Prompt
 setopt PROMPT_SUBST
