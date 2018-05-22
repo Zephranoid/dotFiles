@@ -141,7 +141,7 @@ exec setxkbmap -option caps:escape
 exec udiskie
 exec unclutter -root -visible
 exec mpd
-exec conky --daemonize --pause=5
+exec conky -c ~/.config/conky/conky.conf --daemonize --pause=5
 
 #Program shortcuts
 bindsym $mod+r exec termite -e ranger
